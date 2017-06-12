@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:local="clr-namespace:MyBonsai;assembly=MyBonsai"
+            x:Class="MyBonsai.Views.WikiBonsai.BonsaiSpeciesCatalogPage"
+            Title="Species">
+
+    <StackLayout Orientation="Vertical">
+        <SearchBar Placeholder="Search species..." Text="{Binding Filter}" HeightRequest="50"/>
+
+        <ListView x:Name="bonsaiCatalogListView" ItemsSource="{Binding BonsaiSpecies}" ItemTapped="OnItemTapped" HasUnevenRows="true" SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame Margin="16,8,16,8" Padding="8,8,8,8" HasShadow="true" >
+                            <Grid RowSpacing="1" ColumnSpacing="8" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="80"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Row="0" Grid.Column="0">
+                                    <Image x:Name="BonsaiCoverImage" Source="{Binding CoverImage}" Aspect="AspectFill"/>
+                                    <ActivityIndicator BindingContext="{x:Reference BonsaiCoverImage}" IsRunning= "{Binding IsLoading}"/>
+                                </Grid>
+                                <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding CommonName}" TextColor="Black" FontAttributes="Bold" VerticalTextAlignment="Center" FontSize="Medium"/>
+                                        <Label Text="{Binding LatinName}" TextColor="Gray" VerticalTextAlignment="End" FontSize="Small"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Type : " TextColor="Black" VerticalTextAlignment="Center" FontSize="Small"/>
+                                        <Label Text="{Binding Type}" TextColor="Gray" VerticalTextAlignment="Center" FontSize="Small"/>
+                                    </StackLayout>
+                                    <Label Text="{Binding Description}" VerticalTextAlignment="Center" LineBreakMode="WordWrap" FontSize="Small"/>
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

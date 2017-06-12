@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{A0A40B39-C74A-4F3E-9709-6B8B92AC7ACB}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.ItemProperties.MyBonsai.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyBonsai/Views/WikiBonsai/BonsaiSpeciesDetailPage.xaml.cs">
+    <Files>
+      <File FileName="MyBonsai/Views/WikiBonsai/BonsaiSpeciesDetailPage.xaml" Line="95" Column="15" />
+      <File FileName="MyBonsai/Views/MyBonsai/AddBonsaiPage.xaml" Line="15" Column="1" />
+      <File FileName="MyBonsai/Views/WikiBonsai/BonsaiSpeciesDetailPage.xaml.cs" Line="50" Column="4" />
+      <File FileName="MyBonsai/Views/WikiBonsai/BonsaiSpeciesCatalogPage.xaml.cs" Line="64" Column="71" />
+      <File FileName="MyBonsai/Views/MyBonsai/AddBonsaiPage.xaml.cs" Line="10" Column="42" />
+      <File FileName="MyBonsai/Models/BonsaiSpecies.cs" Line="8" Column="27" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MyBonsai.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.1CEA54BD-ABDD-4717-A300-759BC5C940E3" />
+  <MultiItemStartupConfigurations />
+</Properties>
